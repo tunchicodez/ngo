@@ -1,31 +1,37 @@
-<!-- Shared Navigation Component -->
+<!-- Shared nav fragment for includes.js -->
 <link rel="stylesheet" href="nav.css">
-<script src="./nav.js" defer></script>
-
 <nav class="bg-gray-800 py-4 navbar" role="navigation" aria-label="Main navigation">
   <div class="container-custom">
     <div class="flex justify-between items-center">
       <!-- Logo and Brand -->
       <div class="flex items-center">
-        <img src="logo.png" alt="Annor Yeboah Care Foundation Logo" class="h-10 w-auto mr-3" loading="lazy">
+        <img src="logo.png" alt="Annor Yeboah Care Foundation logo" class="h-10 w-auto mr-3" loading="lazy">
         <a href="Home.html" class="text-xl font-bold text-gradient" aria-label="Annor Yeboah Care Foundation Home">Annor Yeboah Care Foundation</a>
       </div>
 
       <!-- Desktop Navigation -->
-      
+      <ul class="desktop-links md:flex hidden" role="menubar">
+        <li role="none"><a href="Home.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="About Us.html" role="menuitem">About Us</a></li>
+        <li role="none"><a href="Get Involved.html" role="menuitem">Get Involved</a></li>
+        <li role="none"><a href="Contact.html" role="menuitem">Contact</a></li>
+        <li role="none"><a href="Gallery.html" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="Donate.html" class="btn-primary" role="menuitem" aria-label="Donate Now">Donate Now</a></li>
+        <li role="none"><button id="demo-button-desktop" class="btn-primary" role="menuitem" aria-label="Try Demo">Try Demo</button></li>
+      </ul>
 
-      <!-- Mobile Toggle Button -->
-      <div class="md:hidden mobile-toggle">
-        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="text-gray-300 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Mobile Toggle Button (consistent ID/class used by nav.js) -->
+      <div class="mobile-toggle md:hidden">
+        <button id="mobile-menu-toggle" aria-controls="mobile-menu-panel" aria-expanded="false" aria-label="Toggle mobile menu" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu-panel hidden md:hidden" role="menu" aria-hidden="true">
+    <!-- Mobile Menu Panel (id + class match nav.js/nav.css) -->
+    <div id="mobile-menu-panel" class="mobile-menu-panel hidden md:hidden" role="menu" aria-hidden="true">
       <ul>
         <li><a href="Home.html" role="menuitem">Home</a></li>
         <li><a href="About Us.html" role="menuitem">About Us</a></li>
