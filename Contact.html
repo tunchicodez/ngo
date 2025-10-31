@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Support - Annor Yeboah Care Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script src="includes.js" defer></script>
+    <script src="common.js" defer></script>
+    <script src="demo.js" defer></script>
+</head>
+<body class="bg-dark">
+        <!-- Navigation -->
+        <!-- Shared Navigation Component -->
+<link rel="stylesheet" href="nav.css">
+<script src="./nav.js" defer></script>
+
+<nav class="bg-gray-800 py-4 navbar" role="navigation" aria-label="Main navigation">
+  <div class="container-custom">
+    <div class="flex justify-between items-center">
+      <!-- Logo and Brand -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="Annor Yeboah Care Foundation Logo" class="h-10 w-auto mr-3" loading="lazy">
+        <a href="Home.html" class="text-xl font-bold text-gradient" aria-label="Annor Yeboah Care Foundation Home">Annor Yeboah Care Foundation</a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden mobile-toggle">
+        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-panel hidden md:hidden" role="menu" aria-hidden="true">
+      <ul>
+        <li><a href="Home.html" role="menuitem">Home</a></li>
+        <li><a href="About Us.html" role="menuitem">About Us</a></li>
+        <li><a href="Get Involved.html" role="menuitem">Get Involved</a></li>
+        <li><a href="Contact.html" role="menuitem">Contact</a></li>
+        <li><a href="Gallery.html" role="menuitem">Gallery</a></li>
+        <li><a href="Donate.html" class="mt-2 inline-block btn-primary" role="menuitem" aria-label="Donate Now">Donate Now</a></li>
+        <li><button id="demo-button-mobile" class="mt-2 inline-block btn-primary w-full" role="menuitem" aria-label="Try Demo">Try Demo</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Contact & Support</h1>
+            <p class="max-w-3xl text-xl text-gray-200">
+                Get in touch with us. We're here to answer your questions and discuss how you can make a difference.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-dark">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Phone -->
+                <div class="card bg-red-600 border border-red-700 text-center">
+                    <div class="icon-circle bg-white text-red-600">
+                        <i class="fas fa-phone text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-white">Phone</h4>
+                    <p class="text-white text-sm">+233 240 886 840 / +233 558 329 115 / +233 245 368 777</p>
+                </div>
+
+                <!-- Email -->
+                <div class="card bg-red-600 border border-red-700 text-center">
+                    <div class="icon-circle bg-white text-red-600">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-white">Email</h4>
+                    <p class="text-white text-sm mb-1">info@annoryeboahcare.org</p>
+                    <p class="text-white text-sm">support@annoryeboahcare.org</p>
+                </div>
+
+                <!-- Office Location -->
+                <div class="card bg-red-600 border border-red-700 text-center">
+                    <div class="icon-circle bg-white text-red-600">
+                        <i class="fas fa-map-marker-alt text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-white">Office Location</h4>
+                    <p class="text-white text-sm mb-1">Spintex, Aviation Highway</p>
+                    <p class="text-white text-sm">Hydraform Estate, Ghana</p>
+                </div>
+
+                <!-- Office Hours -->
+                <div class="card bg-red-600 border border-red-700 text-center">
+                    <div class="icon-circle bg-white text-red-600">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-white">Office Hours</h4>
+                    <p class="text-white text-sm mb-1">Monday - Friday: 9:00 - 17:00</p>
+                    <p class="text-white text-sm">Sunday:10:00 - 14:00</p>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center mb-16">
+                <h3 class="text-2xl font-semibold mb-6 text-white">Connect With Us</h3>
+                <div class="flex justify-center gap-4">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                       class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                       class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                       class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-dark">
+        <div class="container-custom">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-4 text-white">Send Us a Message</h2>
+                <p class="text-center text-gray-300 mb-8">
+                    Have a question or want to learn more about our programs? Fill out the form below and we'll respond as soon as possible.
+                </p>
+                <div class="card">
+                    <form action="#" method="post" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                            </section>
+                            
+                                <input type="text" id="name" name="name" placeholder="Name" required
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-black">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-black mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="xxxxx@xxxx.com" required
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-black">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-black mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+XX-XX-XX" required
+                                       class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-black">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-black mb-2">Subject *</label>
+                                <select id="subject" name="subject" required
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-black">
+                                    <option value="donor">Donor</option>
+                                    <option value="volunteer">Volunteer</option>
+                                    <option value="enquiry">Enquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-black mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required
+                                      class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 text-black"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-red-600 text-white py-3 px-4 rounded-md hover:bg-red-700 transition-colors font-semibold">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bank & Payment Details -->
+    <section class="py-16 bg-white">
+        <div class="container-custom">
+            <h2 class="text-3xl font-bold text-center mb-4">Donation Account Details</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Support our mission through any of the following payment methods
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <!-- Fidelity Bank -->
+                <div class="card bg-blue-50 card-light">
+                    <div class="icon-circle bg-blue-600 text-white">
+                        🏦
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-black">Fidelity Bank</h4>
+                    <div class="space-y-1">
+                        <p class="text-sm text-black">Account Number:</p>
+                        <p class="text-sm font-medium text-black">2090051217414</p>
+                        <p class="text-sm text-black mt-2">Account Name:</p>
+                        <p class="text-sm font-medium text-black">Annor Yeboah Care Foundation</p>
+                    </div>
+                </div>
+
+                <!-- MTN Mobile Money -->
+                <div class="card bg-yellow-50 card-light">
+                    <div class="icon-circle bg-yellow-600 text-white">
+                        📱
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-black">MTN Mobile Money</h4>
+                    <div class="space-y-1">
+                        <p class="text-sm text-black">Merchant Number:</p>
+                        <p class="text-sm font-medium text-black">0240886840</p>
+                        <p class="text-sm text-black mt-2">Name:</p>
+                        <p class="text-sm font-medium text-black">Annor Yeboah Care</p>
+                    </div>
+                </div>
+
+                <!-- Zelle (USA) -->
+                <div class="card bg-green-50 card-light">
+                    <div class="icon-circle bg-green-600 text-white">
+                        💵
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-black">Zelle (USA)</h4>
+                    <div class="space-y-1">
+                        <p class="text-sm text-black">Email:</p>
+                        <p class="text-sm font-medium text-black">kerenyeboah@gmail.com</p>
+                        <p class="text-sm text-black mt-2">For US-based donors</p>
+                    </div>
+                </div>
+
+                <!-- UK Bank Account -->
+                <div class="card bg-black">
+                    <div class="icon-circle bg-red-600 text-white">
+                        🇬🇧
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-white">UK Bank Account</h4>
+                    <div class="space-y-1">
+                        <p class="text-sm text-white">Account:</p>
+                        <p class="text-sm font-medium text-white">68500727</p>
+                        <p class="text-sm text-white">Sort Code:</p>
+                        <p class="text-sm font-medium text-white">XX-XX-XX</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-lg max-w-3xl mx-auto text-center">
+                <p class="text-sm text-black">
+                    <strong>Note:</strong> Please include your name and email address with your donation so we can send you a receipt and keep you updated on our impact.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us -->
+    <section class="py-16 bg-gray-50">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Visit Our Office</h2>
+                <div class="card">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Office Location</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-map-marker-alt text-red-600 mt-1 flex-shrink-0"></i>
+                                    <div>
+                                        <p class="font-medium mb-1">Annor Yeboah Care Foundation</p>
+                                        <p class="text-gray-600 text-sm">
+                                            Spintex, Aviation Highway<br>
+                                            Hydraform Estate<br>
+                                            Accra, Ghana
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-clock text-red-600 mt-1 flex-shrink-0"></i>
+                                    <div>
+                                        <p class="font-medium mb-1">Office Hours</p>
+                                        <p class="text-gray-600 text-sm">
+                                            Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                            Saturday: closed<br>
+                                            Sunday: 10:00 AM - 2:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">Directions</h3>
+                            <p class="text-gray-600 mb-4">
+                                Our office is located in the Hydraform Estate along the Aviation Highway in Spintex, Greater Accra Region. We are easily accessible by car or public transportation.
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                <strong>Note:</strong> Please call ahead to schedule a visit or arrange a meeting with our team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div data-include="footer.html"></div>
+    <script src="nav.js"></script>
+</body>
+</html>

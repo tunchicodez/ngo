@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us - Annor Yeboah Care Foundation</title>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="jjj.png">
+  <!-- styles moved to styles.css -->
+  <script src="includes.js" defer></script>
+  <script src="common.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+   <div class="bg-gray-700">
+       <!-- Navigation -->
+       <!-- Shared Navigation Component -->
+<link rel="stylesheet" href="nav.css">
+<script src="./nav.js" defer></script>
+
+<nav class="bg-gray-800 py-4 navbar" role="navigation" aria-label="Main navigation">
+  <div class="container-custom">
+    <div class="flex justify-between items-center">
+      <!-- Logo and Brand -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="Annor Yeboah Care Foundation Logo" class="h-10 w-auto mr-3" loading="lazy">
+        <a href="Home.html" class="text-xl font-bold text-gradient" aria-label="Annor Yeboah Care Foundation Home">Annor Yeboah Care Foundation</a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden mobile-toggle">
+        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-panel hidden md:hidden" role="menu" aria-hidden="true">
+      <ul>
+        <li><a href="Home.html" role="menuitem">Home</a></li>
+        <li><a href="About Us.html" role="menuitem">About Us</a></li>
+        <li><a href="Get Involved.html" role="menuitem">Get Involved</a></li>
+        <li><a href="Contact.html" role="menuitem">Contact</a></li>
+        <li><a href="Gallery.html" role="menuitem">Gallery</a></li>
+        <li><a href="Donate.html" class="mt-2 inline-block btn-primary" role="menuitem" aria-label="Donate Now">Donate Now</a></li>
+        <li><button id="demo-button-mobile" class="mt-2 inline-block btn-primary w-full" role="menuitem" aria-label="Try Demo">Try Demo</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="mb-4 text-white text-4xl font-bold">About Us</h1>
+              <p class="max-w-3xl text-xl text-gray-200">
+                Honoring a legacy of compassion, service, and transformational impact across
+                Ghana.
+              </p>
+            </div>
+            <div class="relative">
+              <!-- Image Collage -->
+              <div class="grid grid-cols-2 gap-4">
+                <div class="relative">
+                  <img src="WhatsApp Image 2025-10-27 at 11.37.06.jpeg" alt="Foundation Activity 1" class="w-full h-48 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="relative mt-8">
+                  <img src="WhatsApp Image 2025-10-27 at 11.37.06 (1).jpeg" alt="Foundation Activity 2" class="w-full h-48 object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="relative col-span-2 mt-4">
+                  <img src="WhatsApp Image 2025-10-27 at 11.37.06 (2).jpeg" alt="Foundation Activity 3" class="w-full h-32 object-cover rounded-lg shadow-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founding Story -->
+      <section class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="mb-6 text-center text-white text-3xl font-bold">Our Founding Story</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div class="order-2 md:order-1">
+                <img src="Mr.Annor Yeboah.jpg" alt="Bishop Dr. Augustine Annor Yeboah" class="w-full h-80 object-cover rounded-lg shadow-lg">
+              </div>
+              <div class="order-1 md:order-2 space-y-4 text-gray-300">
+                <p>
+                  The Annor Yeboah Care Foundation was established to continue the inspired
+                  legacy of the Late Bishop Dr. Augustine Annor Yeboah, a visionary leader
+                  whose life was dedicated to uplifting others through education,
+                  spirituality, and community service.
+                </p>
+                <p>
+                  Bishop Dr. Annor-Yeboah believed that investing in people—particularly
+                  through education and skills development—was the most powerful way to
+                  transform communities. His philanthropic work touched countless lives across
+                  Ghana, providing opportunities for those who needed them most.
+                </p>
+                <p>
+                  Today, his family and dedicated trustees carry forward this mission,
+                  ensuring that his vision of hope and transformation continues to flourish.
+                  Through our three core programs, we honor his memory by creating pathways to
+                  success for students, apprentices, and families in need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vision & Mission -->
+      <section class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-gray-800 border border-gray-700 rounded-lg">
+              <div class="p-8">
+                <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                  <i class="fas fa-award w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="mb-4 text-white text-xl font-semibold">Our Vision</h3>
+                <p class="text-gray-300">
+                  To continue the inspired legacy of Late Bishop Dr. Augustine Annor Yeboah
+                  by creating a Ghana where every individual has access to quality
+                  education, vocational training, and the support needed to reach their full
+                  potential.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-gray-800 border border-gray-700 rounded-lg">
+              <div class="p-8">
+                <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                  <i class="fas fa-check-circle w-6 h-6 text-white"></i>
+                </div>
+                <h3 class="mb-4 text-white text-xl font-semibold">Our Mission</h3>
+                <p class="text-gray-300">
+                  To improve lives by investing in people through education, vocational
+                  training, and donations. We are committed to providing sustainable support
+                  that empowers individuals and strengthens communities across Ghana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values -->
+      <section class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+          <h2 class="text-center mb-12 text-white text-3xl font-bold">Our Core Values</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div class="text-center p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors bg-gray-800">
+              <h4 class="mb-3 text-red-600 text-xl font-semibold">Compassion</h4>
+              <p class="text-gray-300 text-sm">Following Bishop Dr. Annor-Yeboah's example of caring for others</p>
+            </div>
+            <div class="text-center p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors bg-gray-800">
+              <h4 class="mb-3 text-red-600 text-xl font-semibold">Education</h4>
+              <p class="text-gray-300 text-sm">Believing in the transformative power of learning and skill development</p>
+            </div>
+            <div class="text-center p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors bg-gray-800">
+              <h4 class="mb-3 text-red-600 text-xl font-semibold">Community</h4>
+              <p class="text-gray-300 text-sm">Building stronger communities through collective support and action</p>
+            </div>
+            <div class="text-center p-6 rounded-lg border border-gray-700 hover:border-red-600 transition-colors bg-gray-800">
+              <h4 class="mb-3 text-red-600 text-xl font-semibold">Integrity</h4>
+              <p class="text-gray-300 text-sm">Operating with transparency and accountability in all our programs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legal Credentials -->
+      <section class="py-16 bg-gray-700">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-center mb-12 text-white text-3xl font-bold">Legal Credentials & Recognition</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-gray-800 border border-gray-700 rounded-lg">
+                <div class="p-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <i class="fas fa-file-alt w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                      <h4 class="mb-2 text-white text-lg font-semibold">Limited by Guarantee</h4>
+                      <p class="text-gray-300 text-sm">
+                        Officially registered as a Limited by Guarantee organization in
+                        2015, ensuring proper governance and accountability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-800 border border-gray-700 rounded-lg">
+                <div class="p-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <i class="fas fa-award w-6 h-6 text-white"></i>
+                    </div>
+                    <div>
+                      <h4 class="mb-2 text-white text-lg font-semibold">NPO License</h4>
+                      <p class="text-gray-300 text-sm">
+                        Licensed by Ghana's Non-Profit Organisation Secretariat for the
+                        2025-2026 period, demonstrating our commitment to transparency and
+                        compliance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-12 p-6 bg-gray-800 rounded-lg border border-gray-700">
+              <h3 class="mb-4 text-center text-white text-xl font-semibold">Commitment to Transparency</h3>
+              <p class="text-gray-300 text-center max-w-2xl mx-auto">
+                As a registered non-profit organization, we maintain the highest standards
+                of financial accountability and program transparency. Our operations are
+                governed by a dedicated board of trustees and directors who ensure that
+                every contribution is used effectively to achieve our mission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div data-include="footer.html"></div>
+    </div>
+    <script src="nav.js"></script>
+  </body>
+</html>

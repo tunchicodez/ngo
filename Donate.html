@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Annor Yeboah Care Foundation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="styles.css" rel="stylesheet">
+  <!-- styles moved to styles.css -->
+  <script src="includes.js" defer></script>
+  <script src="common.js" defer></script>
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <!-- Shared Navigation Component -->
+<link rel="stylesheet" href="nav.css">
+<script src="./nav.js" defer></script>
+
+<nav class="bg-gray-800 py-4 navbar" role="navigation" aria-label="Main navigation">
+  <div class="container-custom">
+    <div class="flex justify-between items-center">
+      <!-- Logo and Brand -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="Annor Yeboah Care Foundation Logo" class="h-10 w-auto mr-3" loading="lazy">
+        <a href="Home.html" class="text-xl font-bold text-gradient" aria-label="Annor Yeboah Care Foundation Home">Annor Yeboah Care Foundation</a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden mobile-toggle">
+        <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle mobile menu" class="text-gray-300 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu-panel hidden md:hidden" role="menu" aria-hidden="true">
+      <ul>
+        <li><a href="Home.html" role="menuitem">Home</a></li>
+        <li><a href="About Us.html" role="menuitem">About Us</a></li>
+        <li><a href="Get Involved.html" role="menuitem">Get Involved</a></li>
+        <li><a href="Contact.html" role="menuitem">Contact</a></li>
+        <li><a href="Gallery.html" role="menuitem">Gallery</a></li>
+        <li><a href="Donate.html" class="mt-2 inline-block btn-primary" role="menuitem" aria-label="Donate Now">Donate Now</a></li>
+        <li><button id="demo-button-mobile" class="mt-2 inline-block btn-primary w-full" role="menuitem" aria-label="Try Demo">Try Demo</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="py-16">
+    <div class="container-custom">
+      <h1 class="text-4xl font-bold mb-4 text-white">Donate</h1>
+      <p class="text-gray-300 max-w-3xl">Thank you for considering a gift to Annor Yeboah Care Foundation. Your support helps provide education, training, and essential services to families in need. Choose any of the methods below to donate — you can also use the quick donation form to notify us of your gift.</p>
+    </div>
+  </header>
+
+  <main class="container-custom mb-24">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+  <div class="card bg-white card-light">
+        <h2 class="text-xl font-semibold mb-3">Quick Donation</h2>
+        <p class="muted mb-4">Use the form below to tell us you've donated (we do not collect payments on this form). For card/online payments, replace the placeholder with your payment provider widget (PayPal/Stripe/etc.).</p>
+        <form action="#" method="post" onsubmit="alert('This is a demo; integrate a payment provider or submit to your server.'); return false;" class="space-y-4">
+          <div>
+            <label for="donor-name" class="block text-sm font-medium mb-1">Full name</label>
+            <input id="donor-name" name="name" type="text" required>
+          </div>
+          <div>
+            <label for="donor-email" class="block text-sm font-medium mb-1">Email</label>
+            <input id="donor-email" name="email" type="email" required>
+          </div>
+          <div>
+            <label for="donation-amount" class="block text-sm font-medium mb-1">Amount (GHS / USD)</label>
+            <input id="donation-amount" name="amount" type="number" min="1" step="any" required>
+          </div>
+          <div>
+            <label for="donation-note" class="block text-sm font-medium mb-1">Note (optional)</label>
+            <textarea id="donation-note" name="note" rows="3"></textarea>
+          </div>
+          <div>
+            <button class="btn-primary" type="submit">I'm ready to donate</button>
+          </div>
+        </form>
+      </div>
+
+  <div class="card bg-white lg:col-span-2 card-light">
+        <h2 class="text-xl font-semibold mb-3">Donation Methods</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-4 border rounded">
+            <h3 class="font-semibold mb-2">Fidelity Bank (GHS)</h3>
+            <p class="text-sm mb-1">Account Number: <strong>2090051217414</strong></p>
+            <p class="text-sm mb-1">Account Name: <strong>Annor Yeboah Care Foundation</strong></p>
+            <p class="muted text-sm">Use bank transfer and email us the confirmation so we can issue a receipt.</p>
+          </div>
+
+          <div class="p-4 border rounded">
+            <h3 class="font-semibold mb-2">MTN Mobile Money</h3>
+            <p class="text-sm mb-1">Merchant Number: <strong>0240886840</strong></p>
+            <p class="text-sm mb-1">Name: <strong>Annor Yeboah Care</strong></p>
+            <p class="muted text-sm">Send via MM and include your name in the note for a receipt.</p>
+          </div>
+
+          <div class="p-4 border rounded">
+            <h3 class="font-semibold mb-2">Zelle (USA)</h3>
+            <p class="text-sm mb-1">Email: <strong>kerenyeboah@gmail.com</strong></p>
+            <p class="muted text-sm">For US donors. Please email transfer confirmation for a receipt.</p>
+          </div>
+
+          <div class="p-4 border rounded">
+            <h3 class="font-semibold mb-2">International (UK / USD)</h3>
+            <p class="text-sm mb-1">For wire or international bank details, please contact us at <a href="mailto:info@annoryeboahcare.org" class="text-red-400">info@annoryeboahcare.org</a></p>
+            <p class="muted text-sm">We can provide beneficiary details and assistance for international transfers.</p>
+          </div>
+        </div>
+
+        <hr class="my-6">
+
+        <div>
+          <h3 class="font-semibold mb-2">Online Payments (recommended)</h3>
+          <p class="muted mb-4">If you want a card/online payment button, integrate your payment provider here (PayPal / Stripe Checkout). Below is a placeholder — replace it with your provider embed code.</p>
+          <div class="p-6 border rounded text-center">
+            <p class="mb-4">[Place your PayPal / Stripe / Flutterwave button here]</p>
+            <a class="btn-primary" href="#">Donate with card (demo)</a>
+          </div>
+        </div>
+
+      </div>
+
+  <div class="card bg-white card-light">
+        <h3 class="font-semibold mb-2">Need a receipt?</h3>
+        <p class="muted mb-3">Email your transfer confirmation with your full name and address to <a href="mailto:info@annoryeboahcare.org" class="text-red-400">info@annoryeboahcare.org</a>. We'll issue an official receipt.</p>
+        <h3 class="font-semibold mb-2">Questions?</h3>
+        <p class="muted">Call +233 240 886 840 or email <a href="mailto:support@annoryeboahcare.org" class="text-red-400">support@annoryeboahcare.org</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <div data-include="footer.html"></div>
+    <script src="nav.js"></script>
+</body>
+</html>
